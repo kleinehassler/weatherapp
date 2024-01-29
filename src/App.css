@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+*/
+:root {
+    --hue: 220;
+    --first-color: hsl(var(--hue), 90%, 60%);
+    --first-color-alt: hsl(var(--hue), 82%, 56%);
+    --first-color-ligth: hsl(var(--hue), 40%, 80%);
+    --title-color: hsl(var(--hue), 24%, 16%);
+    --text-color: hsl(var(--hue), 8%, 45%);
+    --title-color-ligth: hsl(var(--hue), 8%, 60%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(0, 0%, 100%);
+    --shadown-color: hsl(var(--hue), 90%, 30%, .1);
+
+    /* Font ay Typography 
+        .5ren = 8pxm   1rem = 16px
+    */
+    --body-font: font-family: 'Roboto', sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--body-font);
+}
+
+body{
+    background-color: var(--container-color);
+    color: var(--first-color);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    object-fit: contain;
+    border-radius: 15%;
+}
+
+button{
+    display: inline-block;
+    border: none;
+    font-family: var(--body-font);
+    cursor: pointer;
+
+}
+
+ul{
+    list-style: none;
+}
+
+
+.app{
+   /* background-image: url("../public/assets/photos/01.jpg"); */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.isLoading{
+    font-size: var(--biggest-font-size);
+    font-weight: 700;
+}
+
+.form_btn{
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 15%;
+    padding: 2px;
+    background-color: var(--first-color-alt);
+    height: 2rem;
+    width: 5rem;
+}
+
+.textSeach{
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    background-color: var(--first-color-ligth);
+    border-radius: 15%;
+    border-color: var(--first-color-alt);
+    margin:  2px 2px;
+    padding: 2px;
+}
+}
